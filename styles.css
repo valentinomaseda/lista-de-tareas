@@ -1,0 +1,124 @@
+body {
+    font-family: "Afacad";
+    background-color: #0D0D0D;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+    background-color: #F2F2F2;
+    display: flex;
+    position: sticky;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav img {
+    width: 90px;
+    height: auto;
+
+}
+
+.divBotones {
+    margin-right: 30px;
+}
+
+nav button {
+    padding: 10px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 30px;
+    font-family: "Afacad";
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.botonLogIn {
+    background-color: #F25922;
+    border: 3px solid #59200B;
+    color: #59200B;
+}
+
+.botonSignIn {
+    border: 3px solid #F25922;
+    color: #F25922;
+}
+
+.botonLogIn:hover {
+    background-color: #ea8662;
+}
+
+.botonSignIn:hover {
+    background-color: #ffd2c2;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 15px rgb(126, 126, 126);
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.contAgregarTarea {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    margin-right: 30px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #0D0D0D;
+    border: 2px solid #59200B;
+    color: white;
+    transition: background-color .3s ease;
+    font-family: "Afacad";
+    font-size: 15px;
+}
+
+input:hover {
+    background-color: #181818;
+}
+
+.botonAdd {
+    background-color: #F25922;
+    color: white;
+    font-family: "Afacad";
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.botonAdd:hover {
+    background-color: #e77d56
+}
