@@ -122,3 +122,13 @@ input:hover {
 .botonAdd:hover {
     background-color: #e77d56
 }
+
+/* LISTA DE TAREAS */
+
+#taskList {
+    color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+}
