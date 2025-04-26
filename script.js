@@ -12,6 +12,7 @@ function addTask() {
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "X";
         deleteButton.className = "deleteButton";
+        deleteButton.onclick = function() {deleteTask(this)};
         /* desarrollar que se elimine */ 
 
         listItem.appendChild(span);
@@ -22,3 +23,15 @@ function addTask() {
         taskInput.value = "";
     }
 }
+
+function deleteTask(button) {
+    button.parentElement.remove();
+}
+
+const taskInput = document.getElementById("task");
+
+taskInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+})
