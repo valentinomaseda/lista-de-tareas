@@ -21,7 +21,12 @@ nav {
 nav img {
     width: 90px;
     height: auto;
+    transition: transform .3s ease;
+    margin-left: 20px;
+}
 
+nav img:hover {
+    transform: scale(1.1);
 }
 
 .divBotones {
@@ -172,4 +177,61 @@ main ul li:hover {
 .deleteButton:hover {
     background-color: #e09478;
     transform: scale(1.1);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    bottom: 0;
+    padding: 20px;
+    height: auto;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div img {
+    width: 120px;
+}
+
+.imgFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks:hover {
+    text-decoration: underline;
+}
+
+li a {
+    text-decoration: none;
+    list-style: none;
+    color: #59200B;
+}
+
+.footerSocial a {
+    color: #59200B;
+    margin: 3px;
+}
+
+.footerSocial a:hover {
+    color: #80412a;
+}
+
+footer p {
+    color: #59200B;
 }

@@ -13,7 +13,6 @@ function addTask() {
         deleteButton.textContent = "X";
         deleteButton.className = "deleteButton";
         deleteButton.onclick = function() {deleteTask(this)};
-        /* desarrollar que se elimine */ 
 
         listItem.appendChild(span);
         listItem.appendChild(deleteButton);
@@ -21,6 +20,8 @@ function addTask() {
         document.getElementById("taskList").appendChild(listItem);
 
         taskInput.value = "";
+    } else if(taskText === '') {
+        alert("La tarea no puede estar vacía")
     }
 }
 
